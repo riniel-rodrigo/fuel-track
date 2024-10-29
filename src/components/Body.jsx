@@ -2,7 +2,7 @@ import { View } from "react-native";
 
 const Body = ({ children }) => {
     return (
-        <View className="flex m-4" >
+        <View className="m-4 flex-1" >
             {children}
         </View>
     );

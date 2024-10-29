@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { View, Text } from "react-native";
 
-import Container from "../components/Container.jsx";
-import Body from "../components/Body.jsx";
-import Header from "../components/Header.jsx";
-import Input from "../components/Input.jsx";
-import PrimaryButton from "../components/PrimaryButton.jsx";
+import Container from "@/components/Container.jsx";
+import Body from "@/components/Body.jsx";
+import Header from "@/components/Header.jsx";
+import Input from "@/components/Input.jsx";
+import PrimaryButton from "@/components/PrimaryButton.jsx";
 
 
 const Calculator = () => {
@@ -36,9 +36,9 @@ const Calculator = () => {
         if (gasoline || gasoline > 0 || ethanol || ethanol > 0) {
             let pct = Math.round((ethanol / gasoline) * 100);
             if (pct > 70) {
-                setAnswer(pct + "% Recomendamos - abastecer com Gasolina");
+                setAnswer(pct + "% Recomendamos abastecer com Gasolina");
             } else {
-                setAnswer(pct + "% Recomendamos - abastecer com Etanol");
+                setAnswer(pct + "% Recomendamos abastecer com Etanol");
             }
         }
     }

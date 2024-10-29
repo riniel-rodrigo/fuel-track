@@ -4,7 +4,7 @@ const Input = (props) => {
     return (
         <TextInput
             textColor="#FFF"
-            style={{ backgroundColor: "#121212", color: "#fff" }}
+            style={{ backgroundColor: "#070707", color: "#fff" }}
             keyboardType="decimal-pad"
             {...props}
         />
